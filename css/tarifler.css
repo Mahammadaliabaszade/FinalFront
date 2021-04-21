@@ -165,87 +165,89 @@ a {
     padding: 1.4em 0;
 }
 
-
-/* header css */
-
-
-/* innercss */
-
-.news-section_header {
-    min-height: 181px;
-    background-color: #3e4095;
-    display: flex;
-    align-items: center;
+.tariff-section_header {
+    padding: 2em 0;
+    background: #f0f0f8;
 }
 
-.news-section_title {
-    font-size: 3.75rem;
-    font-weight: 800;
-    line-height: 1;
-    color: #fff;
-}
-
-.main-news {
-    background-image: url(https://vipex.az/storage/news/7Kn1yXGRV46Pkxrqe2usk4yjLPmaVyppgSoeuTv3.jpeg);
-    background-repeat: no-repeat;
-}
-
-.main-news {
-    min-height: 564px;
-    background-color: #f0f5fb;
-    position: relative;
-    margin-bottom: 3.5em;
-}
-
-.news-section_body {
-    padding: 8em 0;
-}
-
-.main-news_title {
-    border-left: 9px solid #4e558e;
-    padding-left: 1.2em;
-    position: absolute;
-    bottom: 0.5em;
-    left: 1.5em;
-    line-height: 1;
-    color: #272828;
-    font-size: 40px;
-}
-
-.news-sidebar_item-desc {
-    flex-basis: calc(100% - 104px);
-    max-width: calc(100% - 104px);
-    padding-left: 1.7em;
-}
-
-
-/* .news-sidebar_item {
-    display: inline-flex;
-} */
-
-.news-sidebar_item {
-    display: flex;
-    margin-bottom: 2.8em;
-}
-
-.news-sidebar_item-title {
-    display: block;
-    color: #2a282a;
-    font-size: 1.3125rem;
+.tariff-main_title {
+    color: #444447;
+    font-size: 2.125rem;
     font-weight: 700;
 }
 
-.news-h3_title-text {
-    font-size: 1.125rem;
-    color: #2a282a;
-    background: #fff;
-    padding-right: .6em;
+.tariff-section_content {
     position: relative;
+    padding-bottom: 20em;
     z-index: 1;
+    margin-top: 70px;
 }
 
+.tariff-section_content ::after {
+    content: '';
+    display: block;
+    width: 678px;
+    height: 596px;
+    background: url(https://vipex.az/new/img/bg/delivery-bg.jpg) top right;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: -1;
+}
 
-/* footer css */
+.tariff-section_row .column {
+    flex: 45% 0 0;
+    max-width: 45%;
+    padding: 0 15px;
+}
+
+.tariff-section_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.tariff-section_title {
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #231f1f;
+    margin-bottom: 2em;
+}
+
+.tariff-table {
+    margin-bottom: 2.5em;
+    width: 100%;
+}
+
+.tariff-table tr:first-child {
+    border-top: 1px solid #f2f5f6;
+}
+
+.tariff-table tr {
+    border-bottom: 1px solid #f2f5f6;
+}
+
+.tariff-table td:first-child {
+    padding-left: 0;
+    color: #7f8281;
+    font-weight: 500;
+    font-size: 1.3125rem;
+}
+
+.tariff-table td {
+    padding: .7em;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.tariff-table tr {
+    border-bottom: 1px solid #f2f5f6;
+}
 
 .main-footer {
     flex: 0 0 auto;
