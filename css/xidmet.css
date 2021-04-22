@@ -67,6 +67,11 @@ a {
     background-color: transparent;
 }
 
+div.main-news_name a{
+    color:black;
+     font-size: 50px;
+}
+
 .main-head_right-column {
     display: flex;
     align-items: center;
@@ -183,6 +188,8 @@ a {
     font-weight: 800;
     line-height: 1;
     color: #fff;
+    text-align: center;
+
 }
 
 .main-news {
@@ -330,4 +337,29 @@ a {
     padding-bottom: 15px;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  main.main-content  div.news-section_header{
+     width: 100%;
+  }
+
+  main.main-content  div.news-section_header div.news-section_title{
+    font-size: 30px;
+    text-align: center;
+
+    } 
+
+    .main-btn{
+       min-width: 120px;
+    }
+
+    div.main-news_name a{
+        font-size: 30px;
+    }
+
+    .head-nav_menu li a{
+        font-size: 10px;
+    }
+
 }
