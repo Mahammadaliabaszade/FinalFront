@@ -181,12 +181,191 @@
             color: white;
         }
         
+        .contact-section_content {
+            padding: 1.2em;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            padding: 2.2em 3em 5em;
+            background: #fff;
+            -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+            box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-list {
+            border-left: 1px solid #f5f5f5;
+            padding: 7.5em 0 2em 3.5em;
+            margin-top: 4.5em;
+            margin-left: 8%;
+        }
+        
+        .form-input {
+            height: 64px;
+            background-color: #f2f2f2;
+            border: 1px solid transparent;
+            padding: 0 1em;
+            font-size: 1.1875rem;
+            width: 100%;
+            -webkit-transition: border .3s;
+            -o-transition: border .3s;
+            transition: border .3s;
+        }
+        
+        .main-btn {
+            display: inline-block;
+            min-width: 174px;
+            height: 46px;
+            font-size: 1.375rem;
+            font-weight: 500;
+            line-height: 44px;
+            background-color: #ff944b;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            padding: 0 1em;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            z-index: 1;
+        }
+        
+        .contact-form_submit {
+            height: 64px;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            margin-top: .5em;
+            font-size: 1.3125rem;
+            width: 100%;
+        }
+        
+        .form-textarea {
+            height: 160px;
+            background-color: #f2f2f2;
+            border: 1px solid transparent;
+            padding: 1em 1em 0;
+            font-size: 1.1875rem;
+            width: 100%;
+            resize: none;
+            outline: none;
+            -webkit-transition: border .3s;
+            -o-transition: border .3s;
+            transition: border .3s;
+        }
+        
+        .contact-form_title {
+            font-size: 30px;
+            color: red;
+            margin-bottom: 20px;
+        }
+        
+        .contact-list li {
+            margin-bottom: 1.9em;
+            color: #4e4e4e;
+            position: relative;
+            font-size: 1.3125rem;
+            padding-left: 2em;
+        }
+        
+        .form-group {
+            margin-bottom: 1.6em;
+        }
+        
+        .main-footer {
+            flex: 0 0 auto;
+            background: #27272a;
+            height: 360px;
+        }
+        
+        .app-links img {
+            width: 120px;
+            max-width: 100%;
+        }
+        
+        .payment-card img {
+            width: 120px;
+            max-width: 100%;
+        }
+        
+        .footer-logo {
+            margin-bottom: 5.7em;
+        }
+        
+        .footer-social_box {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .social-network {
+            display: flex;
+            margin-right: 2.5em;
+        }
+        
+        .footer-title {
+            display: block;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #fff;
+            margin-top: .5em;
+            margin-bottom: 1em;
+            padding-top: 20px;
+        }
+        
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            font-size: 1.375rem;
+            font-weight: 500;
+            max-width: 350px;
+        }
+        
+        .footer-menu li {
+            flex: 50% 0 0;
+            padding: 0 8px;
+            margin-bottom: 0.7em;
+            color: grey;
+            font-size: 25px;
+        }
+        
+        .footer-contact li {
+            color: #7a7b7d;
+            margin-bottom: 1.2em;
+        }
+        
+        .footer-contact li a {
+            color: #7a7b7d;
+            margin-bottom: 1.2em;
+        }
+        
+        .app-links {
+            display: inline-flex;
+            float: left;
+            padding-top: 10px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .payment-card {
+            display: inline-flex;
+            float: right;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
         @media screen and (max-width: 600px) {
             .main-head_right-column {
                 display: block;
                 align-items: left;
                 justify-content: space-between;
                 padding: 0 0;
+            }
+            .main-footer {
+                flex: 0 0 auto;
+                background: #27272a;
+                height: 860px;
             }
             .main-btn {
                 display: inline-block;
@@ -213,5 +392,10 @@
             }
             .qeydiyyat {
                 margin-top: -40px;
+            }
+            .contact-list {
+                border-left: 1px solid #f5f5f5;
+                padding: 2.5em 0 2em 1.5em;
+                margin-top: 1.5em;
             }
         }

@@ -333,3 +333,14 @@ a {
     justify-content: flex-end;
     align-items: center;
 }
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .main-footer {
+        flex: 0 0 auto;
+        background: #27272a;
+        height: 860px;
+    }
+    .main-head_right-column {
+        display: block;
+    }
+}

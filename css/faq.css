@@ -170,88 +170,90 @@ div.main-news_name a {
     padding: 1.4em 0;
 }
 
-
-/* header css */
-
-
-/* innercss */
-
-.news-section_header {
-    min-height: 181px;
-    background-color: #3e4095;
-    display: flex;
-    align-items: center;
+.faq-section_header {
+    padding: 4.4em 0;
+    background: #eff3f6;
 }
 
-.news-section_title {
-    font-size: 3.75rem;
-    font-weight: 800;
-    line-height: 1;
-    color: #fff;
+.faq-section_title {
+    color: #285665;
+    font-size: 5.125rem;
+    font-weight: 700;
+    margin-bottom: .33em;
+    text-transform: uppercase;
     text-align: center;
 }
 
-.main-news {
-    background-image: url(https://vipex.az/storage/news/7Kn1yXGRV46Pkxrqe2usk4yjLPmaVyppgSoeuTv3.jpeg);
-    background-repeat: no-repeat;
-}
-
-.main-news {
-    min-height: 564px;
-    background-color: #f0f5fb;
-    position: relative;
-    margin-bottom: 3.5em;
-}
-
-.news-section_body {
-    padding: 8em 0;
-}
-
-.main-news_title {
-    border-left: 9px solid #4e558e;
-    padding-left: 1.2em;
-    position: absolute;
-    bottom: 0.5em;
-    left: 1.5em;
-    line-height: 1;
-    color: #272828;
-    font-size: 40px;
-}
-
-.news-sidebar_item-desc {
-    flex-basis: calc(100% - 104px);
-    max-width: calc(100% - 104px);
-    padding-left: 1.7em;
-}
-
-
-/* .news-sidebar_item {
-    display: inline-flex;
-} */
-
-.news-sidebar_item {
-    display: flex;
-    margin-bottom: 2.8em;
-}
-
-.news-sidebar_item-title {
-    display: block;
-    color: #2a282a;
+.faq-section_header .text {
+    color: #285665;
     font-size: 1.3125rem;
-    font-weight: 700;
+    text-align: center;
 }
 
-.news-h3_title-text {
-    font-size: 1.125rem;
-    color: #2a282a;
-    background: #fff;
-    padding-right: .6em;
+.faq-section_body {
+    padding: 6em 0;
+}
+
+.faq-section_body .container {
+    max-width: 925px;
+}
+
+.faq-item.is-active .faq-item_title {
+    border-bottom-color: transparent;
+}
+
+.faq-item_title {
+    border-top: 1px solid #f2f4f5;
+    border-bottom: 1px solid #f2f4f5;
+    padding: 1.35em 1.2em 1.35em 2.5em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #4a4a4a;
     position: relative;
-    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
 }
 
+.faq-item.is-active .faq-item_text {
+    display: block;
+}
 
-/* footer css */
+.faq-item_text {
+    display: none;
+    color: #6d8c96;
+    font-size: 1.235rem;
+    font-weight: 500;
+    padding-left: 2.5em;
+    border-bottom: 1px solid #f2f4f5;
+}
+
+.faq-section_subtitle {
+    color: #305c6b;
+    font-size: 2.325rem;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 1.7em;
+    text-align: center;
+}
+
+.contact-box {
+    height: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5eaec;
+    border-radius: 10px;
+    padding: .4em;
+    padding-top: 1.5em;
+}
+
+.contact-box_phone-number {
+    color: #2e5b6a;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
 
 .main-footer {
     flex: 0 0 auto;
@@ -339,25 +341,22 @@ div.main-news_name a {
 }
 
 @media screen and (min-width: 0px) and (max-width: 550px) {
-    main.main-content div.news-section_header {
-        width: 100%;
-    }
-    main.main-content div.news-section_header div.news-section_title {
-        font-size: 30px;
-        text-align: center;
-    }
-    .main-btn {
-        min-width: 120px;
-    }
-    div.main-news_name a {
-        font-size: 30px;
-    }
-    .head-nav_menu li a {
-        font-size: 10px;
-    }
     .main-footer {
         flex: 0 0 auto;
         background: #27272a;
         height: 860px;
     }
+    .main-head_right-column {
+        display: block;
+    }
+}
+
+.contact-box_email {
+    position: relative;
+    color: #fd6f4f;
+    font-size: 1.25rem;
+    font-weight: 500;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
 }
