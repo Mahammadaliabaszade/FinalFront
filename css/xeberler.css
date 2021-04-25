@@ -170,15 +170,6 @@ div.main-news_name a {
     padding: 1.4em 0;
 }
 
-
-/* header css */
-
-
-/* 193e qeder bizim xidmetlere qeder */
-
-
-/* innercss */
-
 .news-section_header {
     min-height: 181px;
     background-color: #3e4095;
@@ -187,16 +178,11 @@ div.main-news_name a {
 }
 
 .news-section_title {
-    font-size: 3.75rem;
+    font-size: 3.35rem;
     font-weight: 800;
     line-height: 1;
     color: #fff;
-    text-align: center;
-}
-
-.main-news {
-    background-image: url(https://vipex.az/storage/news/7Kn1yXGRV46Pkxrqe2usk4yjLPmaVyppgSoeuTv3.jpeg);
-    background-repeat: no-repeat;
+    padding-left: 30px;
 }
 
 .main-news {
@@ -206,56 +192,49 @@ div.main-news_name a {
     margin-bottom: 3.5em;
 }
 
-.news-section_body {
-    padding: 6em 0;
-}
-
 .main-news_title {
     border-left: 9px solid #4e558e;
     padding-left: 1.2em;
     position: absolute;
-    bottom: 0.5em;
-    left: 1.5em;
+    bottom: 3.5em;
+    left: 3.5em;
     line-height: 1;
     color: #272828;
-    font-size: 40px;
 }
 
-.news-sidebar_item-desc {
-    flex-basis: calc(100% - 104px);
-    max-width: calc(100% - 104px);
-    padding-left: 1.7em;
-    font-size: 22px;
+.news-section_body {
+    padding: 6em 0;
+}
+
+.news-h3_title {
+    position: relative;
+    font-weight: 800;
+    margin-bottom: 2.5em;
+    font-size: 30px;
+}
+
+.news-sidebar_content {
+    margin-bottom: 3.3em;
 }
 
 .news-sidebar_item {
     display: flex;
+    margin-bottom: 2.8em;
 }
 
-.word2 {
-    list-style: none;
-}
-
-.news-h3_title-text {
-    font-size: 1.125rem;
-    color: #2a282a;
-    background: #fff;
-    padding-right: .6em;
-    position: relative;
-    z-index: 1;
+.news-sidebar_item-desc {
+    flex-basis: calc(100% - 104px);
+    max-width: -webkit-calc(100% - 104px);
+    max-width: calc(100% - 104px);
+    padding-left: 1.7em;
 }
 
 .news-sidebar_item-title {
-    display: inline-block;
+    display: block;
+    color: #2a282a;
+    font-size: 1.3125rem;
+    font-weight: 700;
 }
-
-.news-sidebar_item-img {
-    height: 140px;
-    width: 120px;
-}
-
-
-/* footer css */
 
 .main-footer {
     flex: 0 0 auto;
