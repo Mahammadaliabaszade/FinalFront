@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vipex.az - Ən son kampaniya və xəbərlər</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/esas.css">
+</head>
+
+<body>
+    <header class="ui-header">
+        <div class="head_top-panel" style="height: 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-7 left-column" style="display: inherit;">
+                        <ul class="social-network" style="display: inherit;">
+
+                            <li>
+                                <a href="https://www.instagram.com/vipex_az/"><img alt="alt" src="https://vipex.az/new/img/icons/inst-icon.png"></a>
+                            </li>
+                            <li style="margin-top:6px;">
+                                <a href="https://www.facebook.com/vipexaz"><img alt="alt" src="https://vipex.az/new/img/icons/fb-icon.png"></a>
+                            </li>
+                        </ul>
+                        <ul class="head_top-panel_menu" style="PADDING-LEFT: 30px;">
+                            <li><a href="./elaqe.html">Əlaqə</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <ul class="head_log-register">
+                            <li><a style="margin-right: 12px;" href="https://vipex.az/login">DAXİL OL </a></li>
+                            <li><a href="https://vipex.az/signup">| QEYDİYYAT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-head" style="margin-top: 20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 main-head_left-column">
+                        <div class="head-logo">
+                            <a href="https://vipex.az"><img alt="alt" style="max-width: 100%;
+                            " src="https://vipex.az/new/img/static/logo.png"></a>
+                        </div>
+                        <div class="hamburger hamburger--spring">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 main-head_right-column">
+                        <nav class="head-nav" style="padding-left: 20px;">
+                            <ul class="head-nav_menu">
+                                <li class="">
+                                    <a href="./esas.html" rel="nofollow">Əsas</a>
+                                </li>
+                                <li class="">
+                                    <a href="./xidmet.html" rel="nofollow">Xidmətlər</a>
+                                </li>
+                                <li class="">
+                                    <a href="./tarifler.html" rel="nofollow">Tariflər</a>
+                                </li>
+                                <li class="">
+                                    <a href="./xeberler.html" rel="nofollow">Xəbərlər</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                        <a data-toggle="modal" href="#packageSearchModal" style="padding-right: 25px;">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <a href="/login" class="callback-btn main-btn">Sifariş et</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <div style="margin-top: 30px;">
+            <div>
+                <img src="https://vipex.az/new/img/bg/main-bg.jpg" class="mainphot" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+
+            <div class="main-calculator" style="border: 1px solid black;margin-left: 20.1%;">
+                <div class="main-calculator_slider slick-initialized slick-slider">
+                    <div class="slick-list draggable">
+                        <div class="slick-track" style="opacity: 1; width: 656px; transform: translate3d(0px, 0px, 0px);">
+                            <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 656px;">
+                                <div class="bizimki">
+                                    <div class="main-calculator_item" style=" display: inline-block;">
+                                        <div class="row">
+                                            <div class="col-lg-7 col-md-6 bizimelem  col-sm-6">
+                                                <div class="main-calculator_item-title">
+                                                    Ən sərfəli tariflərlə xidmətinizdəyik <small>Məbləğ hesablanması</small>
+                                                </div>
+                                                <div class="selectric-wrapper selectric-js-select">
+                                                    <div class="selectric-hide-select"><select class="js-select" id="country1" tabindex="-1">
+                <option data-cur="0.202" value="15">TRY</option>
+                <option data-cur="1.703" value="16">$</option>
+                </select></div>
+                                                    <div class="selectric"><span class="label">TRY</span><b class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="selected">TRY</li>
+                                                                <li data-index="1" class="last">$</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0"></div>
+                                                <input type="text" class="main-calculator_input" onkeyup="calculateTotal(this);" placeholder="Məbləğ, məsələn: 100" tabindex="0">
+                                                <p></p>
+                                                <p>Ödəniləcək məbləğ: <span id="cashPay"></span></p>
+                                            </div>
+                                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                                <div class="main-calculator_item-title">Çəki hesablanması</div>
+                                                <div class="row">
+                                                    <div class="col-6 biziminput2">
+                                                        <div class="main-calculator_select">
+                                                            <div class="selectric-wrapper selectric-js-select">
+                                                                <div class="selectric-hide-select"><select class="js-select" id="country" tabindex="-1">
+                <option data-cur="0.202" value="15">Türkiyə</option>
+                <option data-cur="1.703" value="16">ABŞ</option>
+                </select></div>
+                                                                <div class="selectric"><span class="label">Türkiyə</span><b class="button">▾</b></div>
+                                                                <div class="selectric-items" tabindex="-1">
+                                                                    <div class="selectric-scroll">
+                                                                        <ul>
+                                                                            <li data-index="0" class="selected">Türkiyə</li>
+                                                                            <li data-index="1" class="last">ABŞ</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div><input class="selectric-input" tabindex="0"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 biziminput">
+                                                        <div class="main-calculator_wrapper-input">
+                                                            <input type="number" class="main-calculator_input-small " id="wght" placeholder="Çəki" tabindex="0">
+                                                            <input type="hidden" class="form-control" id="count" value="1" placeholder="Bağlama sayı (məs:1,2,3)" required="" tabindex="0">
+                                                            <select style="border-radius:50%;background:white;border:1px solid lightgray;" class="" id="weight" tabindex="0">
+                <option value="kg">kq</option>
+                </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a onclick="calculatePrice()" class="main-calculator_btn" tabindex="0">Hesabla</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-calculator_cost">
+                    Cəmi <span id="totalPrice" class="main-calculator_sum">$0,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="advantages-box">
+                    <div class="advantages-title">
+                        Bizim üstünlüklərimiz </div>
+                    <div class="advantages-content">
+                        <div class=" col-advantages-item col-lg-4">
+                            <span class="advantages-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/advantages/01.png"></span>
+                            <span class="advantages-item_title">Online platforma</span>
+                            <p class="ptag">
+                                Vipex.az -ABŞ və Türkiyədən bağlamaların çatdırılmasını həyata keçirən kargo şirkətidir </p>
+                        </div>
+                        <div class="advantages-item  col-lg-4">
+                            <span class="advantages-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/advantages/02.png"></span>
+                            <span class="advantages-item_title">Sığorta</span>
+                            <p>
+                                Sığorta olunan mallar xarici anbara daxil olduqdan sonra əməkdaşlar tərəfindən yoxlanılır </p>
+                        </div>
+                        <div class="advantages-item  col-lg-4">
+                            <span class="advantages-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/advantages/03.png"></span>
+                            <span class="advantages-item_title">24/7 dəstək</span>
+                            <p>
+                                Müştərilərimizə 24/7 dəstək göstəririk </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="quality-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="quality-title">
+                            <a href="./xidmet.html"> Xidmətlər </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./xidmet.html">
+                            <span class="quality-box_title" style="color: #3d4499;">Maye məhsulların çatdırılması</span>
+                            <div class="quality-box">
+                                <img style="width: 350px; height: 260px;" src="https://vipex.az/storage/news/uj5JXm4utOHt7L8XYepcg1hJs9VMhcNPIMkQHzrp.jpeg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./xidmet.html">
+                            <span class="quality-box_title" style="color: #3d4499;">Bağlamaların sığortalanması</span>
+                            <div class="quality-box">
+                                <img style="width: 350px; height: 260px;" src="https://vipex.az/storage/news/A4X1ElTSDeHZpYnyZLvWxbRk7hZ5rM2oZ1a1KOlf.jpeg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./xidmet.html">
+                            <span class="quality-box_title" style="color: #3d4499;">Kuryer sifarişi</span>
+
+                            <div class="quality-box">
+
+                                <img style="width: 350px; height: 260px;" src="https://vipex.az/storage/news/nboS6j1sqJyp3Op8MNP4MXAvgC39KDO0HOaoPn2c.jpeg" alt="">
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="work-section">
+            <div class="container">
+                <div class="work-section_title"><span class="title-text">Necə İşləyİr</span></div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="step-item">
+                            <span class="step-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/step/01.png"></span> Məhsulları seçin </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="step-item">
+                            <span class="step-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/step/02.png"></span> Ödəniş edin </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="step-item">
+                            <span class="step-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/step/03.png"></span> Bəyannaməni doldurun </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="step-item">
+                            <span class="step-item_icon"><img alt="alt" src="https://vipex.az/new/img/icons/step/04.png"></span> və Məhsul qapınızdadır </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="partners-section">
+            <div class="container">
+                <div class="work-section_title"><a href="./saytlar.html" class="title-text">Nümunə saytlar</a></div>
+                <ul class="partners-list">
+                    <li>
+                        <a target="_blank" href="http://vipex.to/r?url=http://www.Wahshe.com" rel="nofollow"> <img alt="alt" src="https://vipex.az/storage/websites/9VvA4LPRpe0ClweWWIwmJ4zf3tabpf1BassLfKqV.png"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://vipex.to/r?url=http://www.trendyol.com/" rel="nofollow"> <img alt="alt" src="https://vipex.az/storage/websites/1ht9sUFLQunAV7vo3JuxPnsE8LmVSSh6e4liVZ9p.jpeg"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://vipex.to/r?url=http://www.elleshoes.com/" rel="nofollow"> <img alt="alt" src="https://vipex.az/storage/websites/eCtQrUSCjrJCCx2y0PQ53twFHIdpmRUGcRyWCanB.jpeg"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://vipex.to/r?url=http://Sephora.com" rel="nofollow"> <img alt="alt" src="https://vipex.az/storage/websites/7cv550PbSqdtFzmdHJ9FONvjtDoARFbxbxxQvRDn.jpeg"></a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <a href="./saytlar.html" class="all-shop_btn">Hamısı</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer_top">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-logo">
+                        <a href="https://vipex.az"><img alt="alt" style="max-width: 100%;padding-top: 30px
+                            " src="https://vipex.az/new/img/static/logo.png"></a>
+                    </div>
+                    <div class="footer-social_box">
+                        <span class="text" style="    color: white;
+                        font-size: 20px;">SOSİAL ŞƏBƏKƏLƏR:</span>
+                        <ul class="social-network footer_social-network" style=" padding-top: 20px;">
+                            <li>
+                                <a href="https://www.facebook.com/vipexaz"><img alt="alt" src="https://vipex.az/new/img/icons/fb-icon.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/vipex_az/"><img alt="alt" src="https://vipex.az/new/img/icons/inst-icon.png"></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-7 center-column">
+                    <div class="footer-title">Kateqoriyalar<span>:</span></div>
+                    <ul class="footer-menu">
+                        <li><a href="./esas.html" style=" color: grey;
+                            font-size: 15px;">Əsas</a></li>
+                        <li><a href="./xidmet.html" style=" color: grey;
+                            font-size: 15px;">Xidmətlər</a></li>
+                        <li><a href="./tarifler.html" style=" color: grey;
+                            font-size: 15px;">Tariflər</a></li>
+                        <li><a href="./xeberler.html" style=" color: grey;
+                            font-size: 15px;">Xəbərlər</a></li>
+                        <li><a href="./qadagalar.html" style=" color: grey;
+                            font-size: 15px;">Daşınması qadağan olan məhsullar</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-5 left-column">
+                    <div class="footer-title">Bizimlə əlaqə<span>:</span></div>
+                    <ul class="footer-contact">
+                        <li><a href="tel:(+99412) 310-22-60">(+99412) 310-22-60 </a><i class="fa fa-phone"></i></li>
+                        <li><a href="tel:(+99450) 800-55-85"> (+99450) 800-55-85 </a><i class="fa fa-whatsapp"></i></li>
+                        <li><a href="cdn-cgi/l/email-protection.html#9bf2f5fdf4dbedf2ebfee3b5fae1">info@vipex.az</a></li>
+                        <li>Azərbaycan, Bakı</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer_bottom" style="background-color: grey;">
+            <div class="container">
+                <ul class="app-links">
+                    <li>
+                        <a href="https://apps.apple.com/az/app/vipex-az/id1540343396" target="_blank"><img src="https://vipex.az/images/ios-app-link.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.isen.vipex" target="_blank"><img style="margin-left: 10px;" src="https://vipex.az/images/android-app-link.png" alt="android app"></a>
+                    </li>
+                </ul>
+                <ul class="payment-card">
+                    <li><img style="height:45px;" alt="alt" src="https://vipex.az/new/img/icons/payment/03.png"></li>
+                    <li><img alt="alt" src="https://vipex.az/images/payment.png"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/burgermenu.js">
+    </script>
+</body>
+
+</html>
