@@ -67,6 +67,11 @@ a {
     background-color: transparent;
 }
 
+div.main-news_name a {
+    color: black;
+    font-size: 50px;
+}
+
 .main-head_right-column {
     display: flex;
     align-items: center;
@@ -161,94 +166,6 @@ a {
     background: #eef5fa;
 }
 
-.main-head {
-    padding: 1.4em 0;
-}
-
-.tariff-section_header {
-    padding: 2em 0;
-    background: #f0f0f8;
-}
-
-.tariff-main_title {
-    color: #444447;
-    font-size: 2.125rem;
-    font-weight: 700;
-}
-
-.tariff-section_content {
-    position: relative;
-    padding-bottom: 20em;
-    z-index: 1;
-    margin-top: 70px;
-}
-
-.tariff-section_content ::after {
-    content: '';
-    display: block;
-    width: 678px;
-    height: 596px;
-    background: url(https://vipex.az/new/img/bg/delivery-bg.jpg) top right;
-    -webkit-background-size: contain;
-    background-size: contain;
-    position: absolute;
-    right: 0;
-    bottom: 80px;
-    z-index: -1;
-}
-
-.tariff-section_row .column {
-    flex: 45% 0 0;
-    max-width: 45%;
-    padding: 0 15px;
-}
-
-.tariff-section_row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -15px;
-}
-
-.tariff-section_title {
-    display: flex;
-    align-items: center;
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #231f1f;
-    margin-bottom: 2em;
-}
-
-.tariff-table {
-    margin-bottom: 2.5em;
-    width: 100%;
-}
-
-.tariff-table tr:first-child {
-    border-top: 1px solid #f2f5f6;
-}
-
-.tariff-table tr {
-    border-bottom: 1px solid #f2f5f6;
-}
-
-.tariff-table td:first-child {
-    padding-left: 0;
-    color: #7f8281;
-    font-weight: 500;
-    font-size: 1.3125rem;
-}
-
-.tariff-table td {
-    padding: .7em;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.tariff-table tr {
-    border-bottom: 1px solid #f2f5f6;
-}
-
 .main-footer {
     flex: 0 0 auto;
     background: #27272a;
@@ -334,13 +251,50 @@ a {
     align-items: center;
 }
 
+.section-title h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #444;
+    font-size: 22px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 550px) {
+    main.main-content div.news-section_header {
+        width: 100%;
+    }
+    main.main-content div.news-section_header div.news-section_title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-btn {
+        min-width: 120px;
+    }
+    div.main-news_name a {
+        font-size: 30px;
+    }
+    .head-nav_menu li a {
+        font-size: 10px;
+    }
     .main-footer {
         flex: 0 0 auto;
         background: #27272a;
         height: 860px;
     }
-    .main-head_right-column {
-        display: block;
+    .news-sidebar_item {
+        display: flex;
+        margin-bottom: 20px;
     }
+    .banner img {
+        width: 340px;
+    }
+}
+
+.custom-btn {
+    border-radius: 3px;
+    display: inline-block;
+    color: #fff;
+    padding: 8px 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    background-color: #3e4095;
 }
